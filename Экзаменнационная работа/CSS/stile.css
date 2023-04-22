@@ -1,0 +1,293 @@
+/* Общий фон */
+body{
+    margin: 0;
+    background-image:  url(../PHOTO/kollaj3.jpg); /*     фон страницы */
+    /*фон повторяется специально*/
+    background-size: 100%;  /* растянуть фон на экран */
+  background-attachment: fixed;/* зафиксировал фон */
+}
+
+/* стартовый баннер */
+.popup{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(165, 231, 231, 0.886);
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.popup_body{
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;    
+}
+.popup_content{
+    background-color: white;
+    color: #070202;
+    max-width: 800px;
+    padding: 30px;
+}
+.popup_close{
+    margin-left: 35%;
+    
+    width: 50px;
+    border: #000 solid;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup_title{
+    display: flex;
+    font-size: 25pt;
+    margin-bottom: 1em;
+    align-items: center;
+    justify-content: center;
+}
+.popup_text{
+    font-size: 20pt;
+}
+
+/* меню */
+.navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background: #7a52b3b4;
+}
+.navbar_wrap{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.hamb{
+    display: none;
+}
+.popupnav{
+    display: none;
+}
+.logo{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+.menu > li > a {
+    text-decoration: none;
+}
+.navbar_wrap .menu{
+    display: flex;
+}
+.navbar_wrap .menu > li {
+    display: flex;
+    align-items: stretch;
+}
+.navbar_wrap .menu > li > a {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    color: #a4e893;
+}
+
+.navbar_wrap .menu > li > a:hover{
+    color: #a4e893;
+}
+@media(max-width:767px){
+    .navbar_wrap .menu{
+        display: none;
+    }
+    .hamb{
+        display: flex;
+    }
+    .hamb_fild{
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    .bar{
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin: 6px auto;
+        background-color: #fff;
+        transition: 0.2s;
+       }
+       .popupnav{
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        z-index: 10;
+        display: flex;
+        transition: 0.3s;
+       }
+       .popupnav.open{
+        left: 0;
+       }
+       .popupnav .menu{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        padding: 50px 0;
+       }
+       .popupnav .menu > li{
+        width: 100%;
+       }
+       .popupnav .menu > li > a{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+        font-size: 20px;
+        font-weight: bold;
+        color: #3f3f3f;
+       }
+       .popupnav .menu > li > a:hover{
+        background-color: rgba(122,82,179,0.1);
+       }
+}
+
+
+
+/* карточки с подробной информацией */
+.all{
+    padding-top: 100px;
+    display:flex;
+    margin-top: 80px;
+    gap: 5px;
+    justify-content: center;
+}
+
+
+
+.one{
+    width: 200px;    
+    border: 5px solid black;
+    background-color: rgba(0, 0, 0, 0.41);
+    color: #a4e893;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 10px;
+    margin-top: 50px;
+    margin-left: 30px;        
+}
+p{
+    background-color: rgba(0, 0, 0, 0.585);
+}
+.img{
+    position: relative;
+}
+.bt1{
+    position: absolute;
+    bottom: 10px;
+}
+.text{
+    background-color: rgba(250, 235, 215, 0.442);
+    display: none;
+}
+
+
+.two{
+    width: 200px;
+    border: 5px solid black;
+    background-color: rgba(0, 0, 0, 0.41);
+    color: #a4e893;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 10px;
+    margin-top: 50px;
+    margin-left: 30px;        
+}
+.img2{
+    position: relative;
+}
+.bt2{
+    position: absolute;
+    bottom: 10px;
+}
+.text2{
+    background-color: rgba(250, 235, 215, 0.442);
+    display: none;
+}
+
+
+.thrie{
+    width: 200px;
+    border: 5px solid black;
+    background-color: rgba(0, 0, 0, 0.41);
+    color: #a4e893;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 10px;
+    margin-top: 50px;
+    margin-left: 30px;        
+}
+.img3{
+    position: relative;
+}
+.bt3{
+    position: absolute;
+    bottom: 10px;
+}
+.text3{
+    background-color: rgba(250, 235, 215, 0.442);
+    display: none;
+}
+
+/* ифрейм с видео */
+.frame{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* footer */
+a{
+    text-decoration: none;
+    color: #a4e893;
+}
+a:hover{
+    text-decoration: underline;
+        color: rgb(9, 9, 9);
+}
+
+.list{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+}
+.soc{
+    display: flex;
+    gap: 10px;
+    padding-top: 4%;
+}
+.st1:hover{
+    background-image: url(../PHOTO/facebook2.jpg);
+}
+a.st2:hover{
+    background-image: url(../PHOTO/free-icon-instagram-color.png);
+}
+a.st3:hover{
+    background-image: url(../PHOTO/free-icon-youtube-color.jpg);
+}
+footer{
+    background-color: rgba(56, 25, 123, 0.333);
+    padding-bottom: 70px;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
